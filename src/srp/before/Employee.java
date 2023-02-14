@@ -2,6 +2,13 @@ package srp.before;
 
 import java.util.Random;
 
+
+/*
+* Employee does not follow SRP.
+* Potential future change that can affect the whole class:
+* - Change of checkSeniority algorithm
+* - Use complex algorithm in the future to generate id
+*/
 public class Employee {
     private String firstName, lastName, id;
     private int experienceInYears;
