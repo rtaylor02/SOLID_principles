@@ -1,4 +1,4 @@
-package srp.before;
+package srp.with;
 
 public class Client {
     public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class Client {
 
     private static void showDetails(Employee e) {
         e.display();
-        System.out.printf("Employee id: %s%n", e.generateId(e.getFirstName()));
-        System.out.printf("Seniority: %s%n", e.checkSeniority(e.getExperienceInYears()));
+        System.out.printf("Employee id: %s%n", new EmployeeIdGenerator().generateId(e.getLastName()));
+        System.out.printf("Seniority: %s%n", new SeniorityChecker().checkSeniority(e.getExperienceInYears()));
         System.out.println("================");
     }
 }

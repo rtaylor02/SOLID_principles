@@ -1,4 +1,4 @@
-package srp.before;
+package srp.without;
 
 import java.util.Random;
 
