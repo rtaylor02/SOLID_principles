@@ -8,8 +8,14 @@
 ## SRP
 A class must have ***one responsibility only***.
 
+**Key**: less is more. The fewer tasks that a class is responsible for (via methods), the better. 
+
 ## OCP
 A software artifact should be ***open to extension*** but ***closed for modification***.
+
+**Key**: abstraction (via interface or abstract class). Let detailed implementation be defined in smaller units of class.
+
+Good example of OCP is ***Strategy Pattern***.
 
 ## LSP
 You should be able to substitute a ***parent*** type with a ***subtype***.

@@ -1,12 +1,11 @@
-package ocp.without;
+package ocp.with;
 
 public class Student {
     String name, department, id;
     double score;
 
-    public Student(String name, String department, String id, double score) {
+    public Student(String name, String id, double score) {
         this.name = name;
-        this.department = department;
         this.id = id;
         this.score = score;
     }

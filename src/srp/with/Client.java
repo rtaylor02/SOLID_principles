@@ -1,5 +1,7 @@
 package srp.with;
 
+import ocp.with.Student;
+
 public class Client {
     public static void main(String[] args) {
         Employee arthur = new Employee("Arthur", "Nichols", 3);

@@ -9,23 +9,23 @@ public class DistinctionDecider {
 
     public void evaluateDistinction(Student student) {
         // Evaluate distinction for Science students
-        if(science.contains(student.getDepartment())) {
-            if(student.getScore() > 80) {
-                System.out.println("Student[" + student.getName() +
-                        ", " + student.getId() +
-                        ", " + student.getDepartment() +
-                        ", " + student.getScore() +
+        if(science.contains(student.department)) {
+            if(student.score > 80) {
+                System.out.println("Student[" + student.name +
+                        ", " + student.id +
+                        ", " + student.department +
+                        ", " + student.score +
                         "] has received a distinction in science");
             }
         }
 
         // Evaluate distinction for Arts students
-        if(arts.contains(student.getDepartment())) {
-            if(student.getScore() > 70) {
-                System.out.println("Student[" + student.getName() +
-                        ", " + student.getId() +
-                        ", " + student.getDepartment() +
-                        ", " + student.getScore() +
+        if(arts.contains(student.department)) {
+            if(student.score > 70) {
+                System.out.println("Student[" + student.name +
+                        ", " + student.id +
+                        ", " + student.department +
+                        ", " + student.score +
                         "] has received a distinction in arts");
             }
         }
