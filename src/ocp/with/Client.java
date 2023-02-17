@@ -14,11 +14,9 @@ public class Client {
         System.out.println("============================");
         for(Student s : scienceStudents) {
             System.out.println(s);
-            ;
         }
         for(Student s : artsStudents) {
             System.out.println(s);
-            ;
         }
         System.out.println();
 
