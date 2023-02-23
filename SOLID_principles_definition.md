@@ -23,6 +23,8 @@ You should be able to substitute a ***parent*** type with a ***subtype***.
 ## ISP
 A client should not depend on a method that it does not use.
 
+**Key**: abstraction (via interface or abstract class) should be designed purposefully, i.e. as small as it functionally can.
+
 ## DIP
 1. A high-level concrete class should not depend on a low-level concrete class. Instead, both must depend on abstractions.
 2. Abstractions should not depend upon details. Instead, the details should depend upon abstractions.
