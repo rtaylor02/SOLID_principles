@@ -1,15 +1,15 @@
 package lsp.without;
 
-public class RegisteredUserPayment implements Payment {
+public class GuestUserPayment implements Payment {
     String name;
 
-    public RegisteredUserPayment(String userName) {
-        this.name = userName;
+    public GuestUserPayment() {
+        this.name = "guest";
     }
 
     @Override
     public void previousPaymentInfo() {
-        System.out.printf("Retrieving %s's last payment details%n", name);
+        throw new UnsupportedOperationException();
     }
 
     @Override
